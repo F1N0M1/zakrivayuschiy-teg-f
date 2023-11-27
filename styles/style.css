@@ -175,10 +175,11 @@
 }
 
 .card__img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  display: block;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card__text {
