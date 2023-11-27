@@ -194,9 +194,11 @@
   justify-content: flex-end;
   margin: 0 25px 25px;
   max-height: 38px;
+  gap: 5px;
 }
 
 .card__icon-button {
+  padding: 0;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -207,7 +209,8 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--text-color);
+  outline: 2px solid var(--text-color);
+  outline-offset: -2px;
 }
 
 .button {
@@ -276,11 +279,6 @@
 
 .like-icon:focus {
   outline: none;
-}
-
-.like-icon:focus-visible {
-  outline: 2px solid var(--text-color);
-  outline-offset: -1px;
 }
 
 .save-memory-container {
@@ -361,7 +359,7 @@
   }
 
   .modal {
-    padding: 28px 34px 28px 40px;
+    padding: 30px 36px;
     max-inline-size: 340px;
   }
 
